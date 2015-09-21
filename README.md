@@ -1,5 +1,5 @@
 #Python Project Generator
-Pynew is a simple script that allows user to generate project folder structure using one line.
+Pynew is a simple script that allows user to generate python project folder structure using one line.
 
 ```
 $ pynew Project
@@ -22,8 +22,13 @@ Project/
 |-- setup.py
 ```
 
-#Support
-Pynew is being developed using Debian-based GNU/Linux, no support for other platforms at the moment.
+#Installation
+Symlink the script in `/bin` to your `~/bin/`
+
+```
+$ ln -s where_you_keep_your_pynew_dir/bin/pynew ~/bin/pynew
+```
+This allows you to use the script in most personal directories
 
 #License
-This project is released under the [MIT License][http://opensource.org/licenses/MIT]
+This project is released under the [MIT License](http://opensource.org/licenses/MIT)
