@@ -5,12 +5,17 @@ import os
 import logging
 from pynew import Pynew
 
+logging.basicConfig(level=logging.INFO)
+
 def main(argv):
-    Pynew.create_main_dir(argv[1])
-    os.chdir(argv[1])
-    Pynew.create_sub_dir(argv[1])
-    Pynew.create_init_file(argv[1])
-    Pynew.seed_init_file(argv[1])
+    project = argv[1]
+
+    Pynew.create_main_dir(project)
+    os.chdir(project)
+    Pynew.create_sub_dir(project)
+    Pynew.create_init_file(project)
+    Pynew.seed_file(project)
+    Pynew.create_symlink_file(project)
 
 if __name__ == "__main__":
     main(sys.argv)
